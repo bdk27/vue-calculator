@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans TC',sans-serif ;
+    font-size: 10px;
+}
+#app{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+button{
+    background: transparent;
+}
+.calculator{
+    width: 50rem;
+}
+.screen{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.screen  label{
+    padding: 1rem 0;
+}
+.screen h3{
+    margin-bottom: 1rem;
+   font-size: 3rem;
+   color: #7b7b7b;
+}
+.screen input{
+    width: 100%;
+    height: 10rem;
+    font-size: 3rem;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: .5rem;
+}
+.screen input:focus{
+    outline: none;
+    border: 1px solid orange;
+}
+::placeholder{
+    color: #ccc;
+}
+.top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.top button{
+    width: 100%;
+    font-size: 1.6rem;
+    padding: 1rem;
+    border: 1px solid #ffa042;
+    color: #ffa042;
+    font-weight: bold;
+    margin: 0px -1px -1px 0px;
+    cursor: pointer;
+}
+.top button:hover{
+    color: #fff;
+    background: #ffa042;
+}
+.middle{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 1rem 0;
+    border: 1px solid red;
+}
+.middle .result{
+    width: 50%;
+    overflow: hidden;  
+}
+.middle .result p{
+    font-size: 2rem;
+    padding: 1rem;
+    font-weight: bold;
+    color: #7b7b7b;
+}
+.middle .result h3{
+    text-align: center;
+    font-size: 3rem;
+}
+.middle .operation{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.middle .operation button{
+    width: 50%;
+    padding: 1.5rem;
+    font-size: 2rem;
+    border: 1px solid red;
+    margin: 0px -1px -1px 0px;
+    color: red;
+    cursor: pointer;
+}
+.middle .operation button:hover{
+    background: red;
+    color: #fff;
+}
+.middle .operation button:nth-child(1){
+    border-top: 0;
+    border-bottom: 0;
+}
+.middle .operation button:nth-child(2){
+    border-top: 0;
+    border-bottom: 0;
+    border-right: 0;
+}
+.middle .operation button:nth-child(4){
+    border-right: 0;
+}
+.middle .operation button:nth-child(5){
+    width: 100%;
+    font-weight: bold;
+    border-top: 0;
+    border-bottom: 0;
+}
+.bottom{
+    background: #f0f0f0;
+}
+.bottom p{
+    color: #7b7b7b;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem;
+}
+.bottom ul {
+    padding: 1rem;
+}
+.bottom ul li{
+    font-size: 1.6rem;
+    color: #7b7b7b;
+    font-weight: bold;
+    margin: 0 0 1rem 2rem;
+}
+
+
+
+
+
+
+
+
+
+

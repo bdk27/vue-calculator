@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <div class="calculator">
+            <div class="screen">
+                <label for="#">
+                    <h3>第一個數字</h3>
+                    <input type="number" placeholder="請輸入第一個數字">
+                </label>
+                <label for="#">
+                    <h3>第二個數字</h3>
+                    <input type="number" placeholder="請輸入第二個數字">
+                </label>
+            </div>
+            <div class="top">
+                <button type="button">DEL刪除</button>
+                <button type="button">BS退格</button>
+                <button type="button">CLR清除</button>
+            </div>
+            <div class="middle">
+                <div class="result">
+                    <p>結果 : </p>
+                    <h3>456</h3>
+                </div>
+                <div class="operation">
+                    <button type="button">+</button>
+                    <button type="button">-</button>
+                    <button type="button">*</button>
+                    <button type="button">/</button>
+                    <button type="button">計算結果</button>
+                </div>
+            </div>
+            <div class="bottom">
+                <p>歷史紀錄 : </p>
+                <ul>
+                    <li>123</li>
+                    <li>123</li>
+                    <li>123</li>
+                    <li>123</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="vue.js"></script>
+</body>
+</html>
