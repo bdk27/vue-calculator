@@ -33,7 +33,7 @@ button{
 }
 .screen input{
     width: 100%;
-    height: 10rem;
+    height: 7rem;
     font-size: 3rem;
     text-align: center;
     border: 1px solid #ccc;
@@ -45,11 +45,6 @@ button{
 }
 ::placeholder{
     color: #ccc;
-}
-.top{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 .top button{
     width: 100%;
@@ -65,67 +60,62 @@ button{
     color: #fff;
     background: #ffa042;
 }
-.middle{
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    margin: 1rem 0;
-    border: 1px solid red;
-}
+
 .middle .result{
-    width: 50%;
+    width: 100%;
     overflow: hidden;  
 }
 .middle .result p{
     font-size: 2rem;
-    padding: 1rem;
     font-weight: bold;
     color: #7b7b7b;
+    margin-top: 1rem;
 }
 .middle .result h3{
     text-align: center;
     font-size: 3rem;
 }
 .middle .operation{
-    width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: 1rem;
 }
 .middle .operation button{
-    width: 50%;
-    padding: 1.5rem;
+    width: 25%;
+    padding: 1rem;
     font-size: 2rem;
-    border: 1px solid red;
-    margin: 0px -1px -1px 0px;
-    color: red;
+    border: 1px solid #ff5151;
+    color: #ff5151;
     cursor: pointer;
 }
+.middle .operation button:nth-child(2){
+    border-right: 0;
+    border-left: 0;
+}
+.middle .operation button:nth-child(3){
+    border-right: 0;
+}
 .middle .operation button:hover{
-    background: red;
+    background: #ff5151;
     color: #fff;
 }
-.middle .operation button:nth-child(1){
-    border-top: 0;
-    border-bottom: 0;
-}
-.middle .operation button:nth-child(2){
-    border-top: 0;
-    border-bottom: 0;
-    border-right: 0;
-}
-.middle .operation button:nth-child(4){
-    border-right: 0;
-}
-.middle .operation button:nth-child(5){
+.middle .output button{
     width: 100%;
+    background: #ff5151;
+    color: #fff;
+    border: 0;
+    padding: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+    margin-top: 1rem;
     font-weight: bold;
-    border-top: 0;
-    border-bottom: 0;
 }
 .bottom{
     background: #f0f0f0;
+    border-radius: .5rem;
+    margin-top: 2rem;
 }
 .bottom p{
     color: #7b7b7b;
